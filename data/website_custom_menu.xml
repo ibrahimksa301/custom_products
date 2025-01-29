@@ -1,0 +1,8 @@
+<odoo>
+    <record id="menu_custom_products" model="website.menu">
+        <field name="name">Custom Products</field>
+        <field name="url">/custom-products</field>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" eval="20"/>
+    </record>
+</odoo>

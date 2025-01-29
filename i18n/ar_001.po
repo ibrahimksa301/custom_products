@@ -1,0 +1,286 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* custom_products
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-03 12:30+0000\n"
+"PO-Revision-Date: 2024-12-03 12:30+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: custom_products
+#: model_terms:ir.ui.view,arch_db:custom_products.template_rfq_form
+msgid "<i class=\"fas fa-align-left\"/> Description"
+msgstr ""
+
+#. module: custom_products
+#: model_terms:ir.ui.view,arch_db:custom_products.template_rfq_form
+msgid "<i class=\"fas fa-cogs\"/> Quantity"
+msgstr ""
+
+#. module: custom_products
+#: model_terms:ir.ui.view,arch_db:custom_products.template_rfq_form
+msgid "<i class=\"fas fa-envelope\"/> Email"
+msgstr ""
+
+#. module: custom_products
+#: model_terms:ir.ui.view,arch_db:custom_products.template_rfq_form
+msgid "<i class=\"fas fa-paper-plane\"/> Submit Request"
+msgstr ""
+
+#. module: custom_products
+#: model_terms:ir.ui.view,arch_db:custom_products.template_rfq_form
+msgid "<i class=\"fas fa-phone\"/> Contact Number"
+msgstr ""
+
+#. module: custom_products
+#: model_terms:ir.ui.view,arch_db:custom_products.template_rfq_form
+msgid "<i class=\"fas fa-user\"/> Name"
+msgstr ""
+
+#. module: custom_products
+#: model_terms:ir.ui.view,arch_db:custom_products.template_product_details
+msgid ""
+"<strong>Price:</strong>\n"
+"                            $"
+msgstr ""
+
+#. module: custom_products
+#: model_terms:ir.ui.view,arch_db:custom_products.template_product_details
+msgid "Back to Products"
+msgstr ""
+
+#. module: custom_products
+#: model:ir.model.fields,field_description:custom_products.field_custom_rfq__contact
+msgid "Contact"
+msgstr ""
+
+#. module: custom_products
+#: model:ir.model.fields,field_description:custom_products.field_custom_product__create_uid
+#: model:ir.model.fields,field_description:custom_products.field_custom_rfq__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: custom_products
+#: model:ir.model.fields,field_description:custom_products.field_custom_product__create_date
+#: model:ir.model.fields,field_description:custom_products.field_custom_rfq__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: custom_products
+#: model:ir.model,name:custom_products.model_custom_product
+msgid "Custom Product"
+msgstr ""
+
+#. module: custom_products
+#: model:ir.actions.act_window,name:custom_products.action_custom_product
+#: model:ir.ui.menu,name:custom_products.menu_custom_product_root
+#: model:website.menu,name:custom_products.menu_custom_products
+msgid "Custom Products"
+msgstr ""
+
+#. module: custom_products
+#: model:ir.model.fields,field_description:custom_products.field_custom_product__description
+#: model:ir.model.fields,field_description:custom_products.field_custom_rfq__description
+msgid "Description"
+msgstr ""
+
+#. module: custom_products
+#: model:ir.model.fields,field_description:custom_products.field_custom_product__display_name
+#: model:ir.model.fields,field_description:custom_products.field_custom_rfq__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: custom_products
+#: model:ir.model.fields.selection,name:custom_products.selection__custom_rfq__state__draft
+msgid "Draft"
+msgstr ""
+
+#. module: custom_products
+#: model:ir.model.fields,field_description:custom_products.field_custom_rfq__email
+msgid "Email"
+msgstr "بريد إلكتروني"
+
+#. module: custom_products
+#: model_terms:ir.ui.view,arch_db:custom_products.template_rfq_form
+msgid "Enter quantity required"
+msgstr "أدخل الكمية المطلوبة"
+
+#. module: custom_products
+#: model_terms:ir.ui.view,arch_db:custom_products.template_rfq_form
+msgid "Enter your contact number"
+msgstr "أدخل رقم الاتصال الخاص بك"
+
+#. module: custom_products
+#: model_terms:ir.ui.view,arch_db:custom_products.template_rfq_form
+msgid "Enter your email"
+msgstr "أدخل بريدك الإلكتروني"
+
+#. module: custom_products
+#: model_terms:ir.ui.view,arch_db:custom_products.template_rfq_form
+msgid "Enter your name"
+msgstr "أدخل اسمك"
+
+#. module: custom_products
+#: model:ir.model.fields,field_description:custom_products.field_custom_product__id
+#: model:ir.model.fields,field_description:custom_products.field_custom_rfq__id
+msgid "ID"
+msgstr ""
+
+#. module: custom_products
+#: model:ir.model.fields,field_description:custom_products.field_custom_product__image
+msgid "Image"
+msgstr ""
+
+#. module: custom_products
+#: model:ir.model.fields,field_description:custom_products.field_custom_product____last_update
+#: model:ir.model.fields,field_description:custom_products.field_custom_rfq____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: custom_products
+#: model:ir.model.fields,field_description:custom_products.field_custom_product__write_uid
+#: model:ir.model.fields,field_description:custom_products.field_custom_rfq__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: custom_products
+#: model:ir.model.fields,field_description:custom_products.field_custom_product__write_date
+#: model:ir.model.fields,field_description:custom_products.field_custom_rfq__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: custom_products
+#: model:ir.model.fields,field_description:custom_products.field_custom_rfq__name
+msgid "Name"
+msgstr "اسم"
+
+#. module: custom_products
+#: model_terms:ir.ui.view,arch_db:custom_products.error_page
+msgid "Oops! Something went wrong."
+msgstr ""
+
+#. module: custom_products
+#: model_terms:ir.ui.view,arch_db:custom_products.template_custom_products
+msgid "Our Products"
+msgstr "منتجاتنا"
+
+#. module: custom_products
+#: model_terms:ir.ui.view,arch_db:custom_products.template_rfq_form
+msgid "Please enter your name"
+msgstr "الرجاء إدخال اسمك"
+
+#. module: custom_products
+#: model_terms:ir.ui.view,arch_db:custom_products.template_rfq_form
+msgid "Please provide a valid email address."
+msgstr "يرجى تقديم عنوان بريد إلكتروني صالح."
+
+#. module: custom_products
+#: model_terms:ir.ui.view,arch_db:custom_products.template_rfq_form
+msgid "Please specify the quantity"
+msgstr "يرجى تحديد الكمية"
+
+#. module: custom_products
+#: model:ir.model.fields,field_description:custom_products.field_custom_product__price
+msgid "Price"
+msgstr ""
+
+#. module: custom_products
+#: model:ir.model.fields.selection,name:custom_products.selection__custom_rfq__state__processed
+msgid "Processed"
+msgstr ""
+
+#. module: custom_products
+#: model:ir.model.fields,field_description:custom_products.field_custom_rfq__product_id
+msgid "Product"
+msgstr ""
+
+#. module: custom_products
+#: model_terms:ir.ui.view,arch_db:custom_products.template_product_details
+msgid "Product Image"
+msgstr ""
+
+#. module: custom_products
+#: model:ir.model.fields,field_description:custom_products.field_custom_product__name
+msgid "Product Name"
+msgstr "اسم المنتج"
+
+#. module: custom_products
+#: model:ir.ui.menu,name:custom_products.menu_custom_product
+msgid "Products"
+msgstr ""
+
+#. module: custom_products
+#: model_terms:ir.ui.view,arch_db:custom_products.template_rfq_form
+msgid "Provide additional details about your request"
+msgstr ""
+
+#. module: custom_products
+#: model:ir.model.fields,field_description:custom_products.field_custom_product__is_published
+msgid "Publish on Website"
+msgstr ""
+
+#. module: custom_products
+#: model:ir.model.fields,field_description:custom_products.field_custom_rfq__quantity
+msgid "Quantity"
+msgstr ""
+
+#. module: custom_products
+#: model:ir.ui.menu,name:custom_products.menu_custom_rfq
+msgid "RFQ List"
+msgstr ""
+
+#. module: custom_products
+#: model:ir.actions.act_window,name:custom_products.action_custom_rfq
+msgid "RFQs"
+msgstr "طلبات عروض الأسعار"
+
+#. module: custom_products
+#: model_terms:ir.ui.view,arch_db:custom_products.template_custom_products
+msgid "Read More"
+msgstr "اقرأ المزيد"
+
+#. module: custom_products
+#: model:ir.model,name:custom_products.model_custom_rfq
+#: model_terms:ir.ui.view,arch_db:custom_products.template_rfq_form
+#: model_terms:ir.ui.view,arch_db:custom_products.view_custom_rfq_form
+msgid "Request for Quotation"
+msgstr ""
+
+#. module: custom_products
+#: model:ir.ui.menu,name:custom_products.menu_custom_rfq_root
+msgid "Request for Quotations"
+msgstr ""
+
+#. module: custom_products
+#: model_terms:ir.ui.view,arch_db:custom_products.template_custom_products
+msgid "Send RFQ"
+msgstr "إرسال طلب عرض الأسعار"
+
+#. module: custom_products
+#: model:ir.model.fields,field_description:custom_products.field_custom_rfq__state
+msgid "Status"
+msgstr ""
+
+#. module: custom_products
+#: model:ir.model.fields.selection,name:custom_products.selection__custom_rfq__state__submitted
+msgid "Submitted"
+msgstr ""
+
+#. module: custom_products
+#: model_terms:ir.ui.view,arch_db:custom_products.thank_you_template
+msgid "Thank you for your Request!"
+msgstr ""
+
+#. module: custom_products
+#: model_terms:ir.ui.view,arch_db:custom_products.thank_you_template
+msgid ""
+"Your RFQ has been submitted successfully. We will get back to you soon."
+msgstr ""

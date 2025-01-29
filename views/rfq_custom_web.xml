@@ -1,0 +1,84 @@
+<odoo>
+    <template id="template_rfq_form" name="Request for Quotation">
+        <t t-call="website.layout">
+            <div class="container mt-5">
+                <div class="card shadow-lg p-4">
+                    <h2 class="text-center mb-4 text-primary">Request for Quotation</h2>
+                    <form method="POST" t-attf-action="/submit-rfq/#{product.id}" class="needs-validation">
+                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                        <input type="hidden" name="product_id" t-att-value="product.id"/>
+
+                        <!-- Name -->
+                        <div class="form-group mb-3">
+                            <label for="name" class="form-label">
+                                <i class="fas fa-user"></i> Name
+                            </label>
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Enter your name" required="1"/>
+                            <div class="invalid-feedback">Please enter your name</div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="form-group mb-3">
+                            <label for="email" class="form-label">
+                                <i class="fas fa-envelope"></i> Email
+                            </label>
+                            <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email" required="1"/>
+                            <div class="invalid-feedback">Please provide a valid email address.</div>
+                        </div>
+
+                        <!-- Contact -->
+                        <div class="form-group mb-3">
+                            <label for="contact" class="form-label">
+                                <i class="fas fa-phone"></i> Contact Number
+                            </label>
+                            <input type="text" name="contact" class="form-control" id="contact" placeholder="Enter your contact number"/>
+                        </div>
+
+                        <!-- Quantity -->
+                        <div class="form-group mb-3">
+                            <label for="quantity" class="form-label">
+                                <i class="fas fa-cogs"></i> Quantity
+                            </label>
+                            <input type="number" name="quantity" class="form-control" id="quantity" placeholder="Enter quantity required" required="1"/>
+                            <div class="invalid-feedback">Please specify the quantity</div>
+                        </div>
+
+                        <!-- Description -->
+                        <div class="form-group mb-3">
+                            <label for="description" class="form-label">
+                                <i class="fas fa-align-left"></i> Description
+                            </label>
+                            <textarea name="description" class="form-control" id="description" rows="4" placeholder="Provide additional details about your request"></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg w-100">
+                                <i class="fas fa-paper-plane"></i> Submit Request
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </t>
+    </template>
+
+    <template id="thank_you_template" name="Thank You">
+        <t t-call="website.layout">
+            <div class="container mt-5">
+                <h2 class="text-center">Thank you for your Request!</h2>
+                <p>Your RFQ has been submitted successfully. We will get back to you soon.</p>
+            </div>
+        </t>
+    </template>
+
+    <template id="error_page" name="Error Page">
+        <t t-call="website.layout">
+            <div class="container mt-5">
+                <h2 class="text-center text-danger">Oops! Something went wrong.</h2>
+                <p t-esc="error" class="text-center"></p>
+            </div>
+        </t>
+    </template>
+
+</odoo>

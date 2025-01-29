@@ -1,0 +1,43 @@
+<odoo>
+    <record id="view_custom_product_tree" model="ir.ui.view">
+        <field name="name">custom.product.tree</field>
+        <field name="model">custom.product</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="price"/>
+                <field name="is_published"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_custom_product_form" model="ir.ui.view">
+        <field name="name">custom.product.form</field>
+        <field name="model">custom.product</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="description"/>
+                        <field name="price"/>
+                        <field name="image" widget="image"/>
+                        <field name="is_published"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_custom_product" model="ir.actions.act_window">
+        <field name="name">Custom Products</field>
+        <field name="res_model">custom.product</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_custom_product_root" name="Custom Products" sequence="1"/>
+    <menuitem id="menu_custom_product" name="Products" parent="menu_custom_product_root"
+              action="action_custom_product"/>
+     <!-- New RFQ Menu -->
+    <menuitem id="menu_custom_rfq_root" name="Request for Quotations" sequence="2" parent="menu_custom_product_root"/>
+</odoo>

@@ -1,0 +1,101 @@
+<odoo>
+    <template id="template_custom_products" name="Custom Products Page">
+        <t t-call="website.layout">
+            <div class="container">
+                <h1>Our Products</h1>
+                <div class="row">
+                    <t t-foreach="products" t-as="product">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img t-if="product.image" t-att-src="website.image_url(product, 'image')"
+                                     class="card-img-top"/>
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <t t-esc="product.name"/>
+                                    </h5>
+                                    <div class="d-flex justify-content-between mt-3">
+                                        <a t-att-href="'/product/%s' % product.id" class="btn btn-primary">Read More</a>
+                                        <!-- In product details template -->
+                                        <a t-att-href="'/product/rfq/%s' % product.id" class="btn btn-success">Send RFQ</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </div>
+            </div>
+        </t>
+    </template>
+
+    <template id="template_product_details" name="Product Details Page">
+        <t t-call="website.layout">
+            <div class="container mt-4">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img t-if="product.image" t-att-src="website.image_url(product, 'image')"
+                             class="img-fluid" alt="Product Image"/>
+                    </div>
+                    <div class="col-md-6">
+                        <h1>
+                            <t t-esc="product.name"/>
+                        </h1>
+                        <p>
+                            <t t-esc="product.description"/>
+                        </p>
+                        <p>
+                            <strong>Price:</strong>
+                            $
+                            <t t-esc="product.price"/>
+                        </p>
+                        <a href="/custom-products" class="btn btn-secondary mt-3">Back to Products</a>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+
+    <!-- RFQ Form Template -->
+<!--    <template id="template_rfq_form" name="RFQ Form">-->
+<!--        <t t-call="website.layout">-->
+<!--            <div class="container mt-4">-->
+<!--                <h2>Request for Quotation</h2>-->
+<!--                <form t-att-action="'/submit-rfq/%s' % product.id" method="post">-->
+<!--&lt;!&ndash;                    <t t-esc="csrf_token()" />&ndash;&gt;-->
+<!--                    <div class="form-group">-->
+<!--                        <label for="name">Name:</label>-->
+<!--                        <input type="text" name="name" id="name" class="form-control" required="required"/>-->
+<!--                    </div>-->
+<!--                    <div class="form-group">-->
+<!--                        <label for="email">Email:</label>-->
+<!--                        <input type="email" name="email" id="email" class="form-control" required="required"/>-->
+<!--                    </div>-->
+<!--                    <div class="form-group">-->
+<!--                        <label for="contact">Contact:</label>-->
+<!--                        <input type="text" name="contact" id="contact" class="form-control"/>-->
+<!--                    </div>-->
+<!--                    <div class="form-group">-->
+<!--                        <label for="quantity">Quantity:</label>-->
+<!--                        <input type="number" name="quantity" id="quantity" class="form-control" required="required"/>-->
+<!--                    </div>-->
+<!--                    <div class="form-group">-->
+<!--                        <label for="description">Description:</label>-->
+<!--                        <textarea name="description" id="description" class="form-control"></textarea>-->
+<!--                    </div>-->
+<!--                    <button type="submit" class="btn btn-primary">Submit</button>-->
+<!--                </form>-->
+<!--            </div>-->
+<!--        </t>-->
+<!--    </template>-->
+
+    <!-- Thank You Message Template -->
+<!--    <template id="thank_you_template" name="Thank You">-->
+<!--        <t t-call="website.layout">-->
+<!--            <div class="container mt-4">-->
+<!--                <h2>Thank You for Your RFQ</h2>-->
+<!--                <p>Your request has been successfully submitted. We will get back to you shortly.</p>-->
+<!--            </div>-->
+<!--        </t>-->
+<!--    </template>-->
+
+</odoo>
